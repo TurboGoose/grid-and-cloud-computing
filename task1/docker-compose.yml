@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  client:
+    build: ./client
+    container_name: curl_client
+    stdin_open: true
+    tty: true
+
+  server:
+    build: ./server
+    ports:
+      - "8000:8000"
+    volumes:
+      - "logsdb:/app/data"
+    
+volumes:
+  logsdb:
