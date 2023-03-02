@@ -1,5 +1,4 @@
-# grid-and-cloud-computing
-First assignments for the "Grid and Cloud computing" course
+# First assignment
 
 ## Formulation
 
